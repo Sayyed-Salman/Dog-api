@@ -1,0 +1,50 @@
+Dog Api
+
+The Dog API is a RESTful API interface for retrieving random images of dogs. The API is completely free to use and does not require an API key. The API is a great way to add some fun to your application or website. The API is a great way to add some fun to your application or website.
+
+Schema
+
+    {
+        id: int,
+        name : string,
+        image : string,
+        description : string,
+    }
+
+
+Methods
+URL = https://localhost:5000/api 
+
+    /add_dog 
+        POST
+        {
+            "name": "Labrador Retriever",
+            "image" : "https://images.dog.ceo/breeds/labrador/n02099712_1003.jpg",
+            "description": "The Labrador Retriever is one of the most popular breeds of dog in Canada, the United Kingdom",
+        }
+
+    /dog/<int:id>
+        GET
+        {
+            "id": 1,
+            "name": "Labrador Retriever",
+            "image" : "https://images.dog.ceo/breeds/labrador/n02099712_1003.jpg",
+            "description": "The Labrador Retriever is one of the most popular breeds of dog in Canada, the United Kingdom",
+        }
+
+    /dogs
+        GET
+        [
+            {
+                "id": 1,
+                "name": "Labrador Retriever",
+                "image" : "https://images.dog.ceo/breeds/labrador/n02099712_1003.jpg",
+                "description": "The Labrador Retriever is one of the most popular breeds of dog in Canada, the United Kingdom",
+            },
+            {
+                "id": 2,
+                "name": "Labrador Retriever",
+                "image" : "https://images.dog.ceo/breeds/labrador/n02099712_1003.jpg",
+                "description": "The Labrador Retriever is one of the most popular breeds of dog in Canada, the United Kingdom",
+            }
+        ]
