@@ -1,4 +1,4 @@
-# Dog API
+# 🐶 Dog API
 
 The Dog API is a RESTful API interface for retrieving random images of dogs. The API is completely free to use and does not require an API key. The API is a great way to add some fun to your application or website.
 
